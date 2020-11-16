@@ -1,0 +1,17 @@
+#Armstsrong number
+
+
+
+n=int(input("enter the value of n"))
+temp=n
+ans=0
+
+while (n!=0):
+	r=n%10
+	ans=ans+int(r)*int(r)*int(r)
+	n=n/10
+
+if (ans==temp):
+	print("its an armstrong number")
+else:
+	print("NO")

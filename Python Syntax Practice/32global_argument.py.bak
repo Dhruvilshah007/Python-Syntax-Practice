@@ -1,0 +1,23 @@
+a=10
+def something():
+	global a
+	a=15
+	print("in function",a)
+something()
+print("outside function",a)
+
+
+
+a=10
+print(id(a))
+
+def something():
+	a=9
+	x=global()['a']
+	print(id(x))
+	print("in function",a)
+	global()['a']=15
+something()
+print(a)
+
+
